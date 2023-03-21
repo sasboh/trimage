@@ -7,7 +7,7 @@ This simple tool takes any kind of images that you get from marketing or UX and 
 ## Install
 
 ```
-$ npm install -g @scout24ch/trimage
+$ npm install -g trimage
 ```
 
 ## Usage
