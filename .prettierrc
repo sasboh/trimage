@@ -1,0 +1,6 @@
+# https://prettier.io/docs/en/options.html
+printWidth: 80
+singleQuote: true
+semi: false
+trailingComma: none
+arrowParens: avoid

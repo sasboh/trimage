@@ -1,0 +1,26 @@
+{
+  "name": "trimage",
+  "version": "1.0.0",
+  "description": "trim your image for the web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sasboh/trimage.git"
+  },
+  "author": "Sascha Bohrloch",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "meow": "^9.0.0",
+    "sharp": "^0.31.3"
+  },
+  "bin": {
+    "trimage": "./index.js"
+  },
+  "files": [
+    "./index.js"
+  ]
+}
