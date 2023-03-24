@@ -1,6 +1,6 @@
 {
   "name": "trimage",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "trim your image for the web",
   "main": "index.js",
   "scripts": {
