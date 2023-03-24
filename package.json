@@ -2,21 +2,38 @@
   "name": "trimage",
   "version": "1.0.0",
   "description": "trim your image for the web",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"No test specified\""
-  },
+  "author": "Sascha Bohrloch",
+  "license": "MIT",
+  "keywords": [
+    "jpg",
+    "jpeg",
+    "pjpeg",
+    "png",
+    "webp",
+    "tiff",
+    "gif",
+    "svg",
+    "image",
+    "resize",
+    "optimize",
+    "convert",
+    "trim",
+    "scale",
+    "crop"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:sasboh/trimage.git"
   },
-  "author": "Sascha Bohrloch",
-  "license": "MIT",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "meow": "^9.0.0",
     "sharp": "^0.31.3"
   },
+  "main": "index.js",
   "bin": {
     "trimage": "./index.js"
   },
