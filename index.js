@@ -17,12 +17,16 @@ const cli = meow(
   Options
     $ --width, -w  width in pixel, keeps aspect ratio if height is undefined
     $ --height, -h  height in pixel, keeps aspect ratio if width is undefined
+    $ --quality, -q  quality level, default is 80
+    $ --progressive, -p  progressiveness of the jpg, default is true
 
   Examples
     $ trimage img1
     $ trimage img1 -w 1024
     $ trimage img1 img2 -h 600
     $ trimage img1 img2 img3 -w 1024 -h 600
+    $ trimage img1 -q 100
+    $ trimage img1 -p false
 `,
   {
     flags: {
@@ -33,6 +37,16 @@ const cli = meow(
       height: {
         type: 'number',
         alias: 'h'
+      },
+      quality: {
+        type: 'number',
+        alias: 'q',
+        default: 80
+      },
+      progressive: {
+        type: 'boolean',
+        alias: 'p',
+        default: true
       }
     }
   }
@@ -43,8 +57,8 @@ const resize = (file, format, options) => {
   return new Promise(resolve => {
     sharp(file)
       .toFormat(format, {
-        quality: 80,
-        progressive: true
+        quality: options.quality,
+        progressive: options.progressive
       })
       .resize({
         width: options.width,
