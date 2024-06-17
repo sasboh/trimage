@@ -31,7 +31,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "meow": "^9.0.0",
-    "sharp": "^0.31.3"
+    "sharp": "^0.32.6"
   },
   "main": "index.js",
   "bin": {
